@@ -1,0 +1,100 @@
+/* Main Dashboard Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.alert {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Create File Modal Styles */
+.modal.d-block {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control {
+  margin-top: 10px;
+}
+
+.alert-info {
+  font-size: 1.1rem;
+  background-color: #e7f3fe;
+  color: #31708f;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.mb-4 {
+  margin-bottom: 20px;
+}
+
+
+.modal.d-block {
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,38 @@
+<div>
+    <h2>Collaborative Text Editor </h2>
+</div>
+<div class="editor">
+    <div #editor class="ql-editor"></div>
+</div>
+
+
+
+  <!-- Permissions Section -->
+  <div class="permissions mt-4">
+    <h3>Manage Permissions</h3>
+    <div class="form-group">
+      <label for="collaborators">Collaborators</label>
+      <input
+        type="text"
+        id="collaborators"
+        class="form-control"
+        [(ngModel)]="newCollaborator"
+        placeholder="Add collaborator email"
+      />
+      <button class="btn btn-success mt-2" (click)="addCollaborator()">Add Collaborator</button>
+    </div>
+
+    <!-- Display Collaborators -->
+    <div *ngIf="document.collaborators.length">
+      <ul class="list-group mt-3">
+        <li *ngFor="let collaborator of document.collaborators" class="list-group-item">
+          {{ collaborator.user_id }} - {{ collaborator.access }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Save Button -->
+  <button class="btn btn-primary mt-4" (click)="saveDocument()">Save Document</button>
+
+<lib-alert></lib-alert>
